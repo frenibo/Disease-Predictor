@@ -198,7 +198,7 @@ model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
 # creating a neural network
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 # model fitting 150 iteration, blocksize 10
-model.fit(X, y, epochs=150, batch_size=10)
+model.fit(X, y, epochs=305, batch_size=10)
 # model evaluation, accuracy
 scores = model.evaluate(X, y)
 print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
